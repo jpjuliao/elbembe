@@ -129,6 +129,12 @@
 			overflow: hidden;
 		}
 
+		@media (max-width: 768px) {
+			.section-1 .carousel .item {
+				height: 120vw;
+			}
+		}
+
 		.section-1 .carousel .item {
 			/* display: flex;
 			align-items: center;
@@ -140,11 +146,19 @@
 			min-width: 100%;
 		}
 
+		@media (max-width: 768px) {
+			.section-1 .carousel img {
+				max-width: initial;
+				max-height: 140vw;
+			}
+		}
+
 		.section-1 .carousel-caption {
 			background: #000000c2;
 			left: 0;
 			right: 0;
-			bottom: 15%;
+			bottom: 50%;
+			margin-bottom: -70px;
 		}
 	</style>
 
