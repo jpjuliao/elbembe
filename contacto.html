@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, maximun-scale=1.0">
+	<title>El Bembé</title>
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" href="./css/estilos.css">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Major+Mono+Display&family=Monoton&display=swap"
+		rel="stylesheet">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		body {
+			min-height: 100vh;
+			background: #000;
+			font-family: 'Julius Sans One', sans-serif;
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navegacion-fm">
+						<span class="sr-only"> Desplegar / Ocultar Menu</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href="./index.html" class="navbar-brand">
+						<img src="./img/gorila3.png" alt="">
+						El Bembé</a>
+				</div>
+				<!-- Inicia Menu -->
+				<div class="collapse navbar-collapse" id="navegacion-fm">
+					<ul class="nav navbar-nav">
+						<li class=""><a href="./index.html">Inicio</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+								Music <span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="./eventos.html" class="">Eventos</a></li>
+								<li class="divider"></li>
+								<li><a href="./sets.html">Sets</a></li>
+							</ul>
+						</li>
+						<li><a href="./blog.html">Blog</a></li>
+						<li><a href="./contacto.html" class="active">Contacto</a></li>
+					</ul>
+
+					<form action="" class="navbar-form navbar-right" role="search">
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="buscar">
+						</div>
+						<button type="submit" class="btn btn-primary">
+							<span class="glyphicon glyphicon-search"></span>
+						</button>
+					</form>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<style>
+		header .navbar-brand {
+			padding-left: 3.5em;
+		}
+
+		header img {
+			max-height: 2.9em;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+	</style>
+
+	<section class="section-1">
+		<div class="container">
+			<h1>Contáctenos</h1>
+			<div class="row">
+				<div class="col-md-7">
+					<div class="details">
+						<div><i class="fa fa-phone"></i> +57 3005665989</div>
+						<div><i class="fa fa-envelope"></i> elbembe@not-a-real-email.com</div>
+					</div>
+					<form action="">
+						<div class="name"><label for="">Nombre</label><input type="text"></div>
+						<div class="correo"><label for="">Correo</label><input type="text"></div>
+						<div class="telefono"><label for="">Teléfono</label><input type="text"></div>
+						<div class="comentario"><label for="">Cometario</label><textarea name="" id="" cols="30" rows="10"></textarea></div>
+						<button class="btn-primary">Enviar</button>
+					</form>
+				</div>
+				<div class="col-md-5 text-center">
+					<img src="./img/gorila1.png" class="img-responsive" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+	<style>
+		.section-1 h1 {
+			padding: 0 0 0.5em 0;
+		}
+		.section-1 {
+			background: #fff;
+			padding: 2em 0 4em;
+		}
+		.section-1 .details{
+			font-size: 1.5em;
+			padding: 1em 0;
+			line-height: 1.8;
+		}
+		.section-1 form >div {
+			display: flex;
+			padding: 0.5em 0;
+		}
+		.section-1 form {
+			background: #ddd;
+			padding: 1.5em;
+			margin-bottom: 2em;
+		}
+		.section-1 label { 
+			min-width: 10em;
+		}
+		.section-1 input,
+		.section-1 textarea { 
+			width: 100%;
+		}
+	</style>
+	
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<ul class="list-inline text-center">
+						<li><a href="#">Inicio</a></li>
+						<li><a href="#">Musica</a></li>
+						<li><a href="#">Contacto</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<style>
+		footer {
+			padding: 3em;
+			background: #000;
+			text-align: center;
+		}
+
+		footer a {
+			color: rgb(107, 107, 107);
+			font-size: 2em;
+		}
+	</style>
+
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
