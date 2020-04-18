@@ -1,16 +1,25 @@
-|<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, maximun-scale=1.0">
+	<meta name="viewport"
+		content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, maximun-scale=1.0">
 	<title>El Bembé</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/estilos.css">
+	<style>
+		body {
+			min-height: 100vh;
+    background: #000;
+		}
+	</style>
 </head>
+
 <body>
 	<header>
 		<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
-			<div class="container">
+			<div class="container-fluid">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navegacion-fm">
 						<span class="sr-only"> Desplegar / Ocultar Menu</span>
@@ -51,131 +60,91 @@
 		</nav>
 	</header>
 
-	<section class="jumbotron">
-		<div class="container">
-			<h1 class="titulo-blog">El Bembé</h1>
-			<p>Música para bailar y volar</p>
-		</div>
-	</section>
-
-	<section class="main container">
-		<div class="row">
-			<section class="post col-md-9">
-				<div class="miga-de-pan">
-					<ol class="breadcrumb">
-						<li><a href="#">Inicio</a></li>
-						<li><a href="#">Music</a></li>
-						<li class="active">Blog</li>
-					</ol>
+	<!-- <section class="section-1">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-4"></div>
+				<div class="col-md-4">
+					<img src="./img/gorila2.png" alt="" class="img-responsive">
 				</div>
-
-				<article class="post clearfix">
-					<a href="#" class="thumb pull-left">
-						<img class="img-thumbnail" src="img/musicblog.jpeg" alt="">
-					</a>  
-					<h2 class="post-tittle">
-						<a href="#">Eventos BEMBÉ</a>
-					</h2>
-					<p><span class="post-fecha">9 de Abril 2020</span> por <span class="post-autor"><a href="#">Mou Shelby</a></span></p>
-					<p class="post-contenido text-justify">
-						Aquí puedes encontrar mi música
-					</p>
-
-					<div class="contenedor-botones">
-						<a href="#" class="btn btn-primary">Leer Mas</a>
-						<a href="#" class="btn btn-primary">Comentarios <span class="badge">20</span></a>
-					</div>
-				</article>
-
-				<article class="post clearfix">
-					<a href="#" class="thumb pull-left">
-						<img class="img-thumbnail" src="img/musicblog.jpeg" alt="">
-					</a>  
-					<h2 class="post-tittle">
-						<a href="#">Sets</a>
-					</h2>
-					<p><span class="post-fecha">9 de Abril 2020</span> por <span class="post-autor"><a href="#">Mou Shelby</a></span></p>
-					<p class="post-contenido text-justify">
-						Aquí accederás a los sets realizados por Mou Shelby
-					</p>
-
-					<div class="contenedor-botones">
-						<a href="#" class="btn btn-primary">Leer Mas</a>
-						<a href="#" class="btn btn-primary">Comentarios <span class="badge">20</span></a>
-					</div>
-				</article>
-
-				<article class="post clearfix">
-					<a href="#" class="thumb pull-left">
-						<img class="img-thumbnail" src="img/musicblog.jpeg" alt="">
-					</a>  
-					<h2 class="post-tittle">
-						<a href="#">El impacto musical de hoy</a>
-					</h2>
-					<p><span class="post-fecha">9 de Abril 2020</span> por <span class="post-autor"><a href="#">Mou Shelby</a></span></p>
-					<p class="post-contenido text-justify">
-						Hoy en día es mercado de la música ha cambiado, existen nuevas compañías discrográficas, 
-						nuevos artistas, nuevos medios, entre otros..
-					</p>
-
-					<div class="contenedor-botones">
-						<a href="#" class="btn btn-primary">Leer Mas</a>
-						<a href="#" class="btn btn-primary">Comentarios <span class="badge">20</span></a>
-					</div>
-				</article>
-
-				<nav>
-					<div class="center-block">
-						<ul class="pagination">
-							<li class="disabled"><a href="#">&laquo; <span class="sr-only">Anterior</span></a></li>
-							<li class="active"><a href="#">1</a></li>
-							<li><a href="#">1</a></li>
-							<li><a href="#">2</a></li>
-							<li><a href="#">3</a></li>
-							<li><a href="#">4</a></li>
-							<li><a href="#">5</a></li>
-							<li><a href="#">&raquo; <span class="sr-only">Siguiente</span> </a></li>
-						</ul>
-					</div>
-				</nav>
-
-			</section>
-
-				<aside class="col-md-3 hidden-xs hidden-sm">
-					<h4>Categorias</h4>
-					<div class="list-group">
-						<a href="#" class="list-group-item active">Eventos y Fotos</a>
-						<a href="#" class="list-group-item">Sets</a>
-					</div>
-					<h4>Articulos Recientes</h4>
-					<a href="#" class="list-group-item">
-						<h4 class="list-group-item-heading">hola que mas este es un titulo</h4>
-						<p class="list-group-item-text">otro texto aqui jejej</p>
-					</a>
-
-					<a href="#" class="list-group-item">
-						<h4 class="list-group-item-heading">hola que mas este es un titulo</h4>
-						<p class="list-group-item-text">otro texto aqui jejej</p>
-					</a>
-
-					<a href="#" class="list-group-item">
-						<h4 class="list-group-item-heading">hola que mas este es un titulo</h4>
-						<p class="list-group-item-text">otro texto aqui jejej</p>
-					</a>
-	</aside>
-
+				<div class="col-md-4">
+				</div>
+			</div>
 		</div>
 	</section>
+	<style>
+		.section-1 {
+			padding: 1em;
+			height: 100vh;
+    display: flex;
+    align-items: center;
+		}
+	</style> -->
 
+	<!-- <img src="./img/fotos bembe 2/DSC_0341.jpg" alt=""> -->
+
+	<section class="section-2">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-4"><a href="./eventos.html"><span>EVENTOS</span></a></div>
+				<div class="col-md-4">
+					<img src="./img/gorila2.png" alt="" class="img-responsive">
+				</div>
+				<div class="col-md-4"><a href="./sets.html"><span>SETS</span></a></div>
+			</div>
+		</div>
+		<img src="" alt="" class="img-responsive">
+	</section>
+	<style>
+		.section-2 .col-md-4 {
+			background: url('./img/fotos bembe 2/DSC_0335.jpg') no-repeat;
+			background-size: auto 103vh;
+			background-position: 41%;
+			min-height: 100vh;
+			font-size: 3em;
+			padding: 2em;
+			color: #fff;
+			font-weight: bold;
+			letter-spacing: .05em;
+			position: relative;
+			filter: hue-rotate(-115.4deg);
+			transition: all .5s;
+		}
+
+		.section-2 .col-md-4:hover {
+			filter: hue-rotate(0deg);
+		}
+
+		.section-2 .col-md-4 a {
+			position: absolute;
+			top: 0; bottom: 0; left: 0; right: 0;
+			color: #fff;
+		}
+		
+		.section-2 .col-md-4 span {
+			position: absolute;
+			left: 1em;
+			bottom: 1em;
+		}
+
+		.section-2 .col-md-4:nth-child(2) {
+			background: none;
+			filter: hue-rotate(0deg);
+			padding: 1em;
+			display: flex;
+			align-items: center;
+		}
+		.section-2 .col-md-4:nth-child(3) {
+			background: url('./img/fotos bembe 2/DSC_0341.jpg') no-repeat;
+			background-size: auto 103vh;
+		}
+	</style>
 
 	<footer>
 		<div class="container">
 			<div class="row">
-				<div class="col-xs-6">
-					<p>Mou Shelby</p>
-				</div>
-				<div class="col.xs-6">
-					<ul class="list-inline text-right">
+				<div class="col-md-12">
+					<ul class="list-inline text-center">
 						<li><a href="#">Inicio</a></li>
 						<li><a href="#">Musica</a></li>
 						<li><a href="#">Contacto</a></li>
@@ -184,9 +153,21 @@
 			</div>
 		</div>
 	</footer>
+	<style>
+		footer {
+			padding: 3em;
+			background: #000;
+			text-align: center;
+		}
+		footer a {
+			color: rgb(107, 107, 107);
+			font-size: 2em;
+		}
+	</style>
 
 	<script src="js/jquery.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 
 </body>
+
 </html>
