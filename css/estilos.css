@@ -1,3 +1,8 @@
+a:hover {
+	text-decoration: none;
+	color: #fff;
+}
+
 /* -- HEADER -- */
 .navbar {
 	margin-bottom: 0; 

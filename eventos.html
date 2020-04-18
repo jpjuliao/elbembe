@@ -6,8 +6,8 @@
 	<meta name="viewport"
 		content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, maximun-scale=1.0">
 	<title>El Bembé</title>
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" href="./css/estilos.css">
 	<link
 		href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Major+Mono+Display&family=Monoton&display=swap"
 		rel="stylesheet">
@@ -78,112 +78,63 @@
 	</style>
 
 	<section class="section-1">
-		<img src="./img/gorila2.png" alt="" class="img-responsive bg-image">
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-md-2"></div>
-				<div class="col-md-8">
-					<div class="image">
-						<img src="./img/gorila2.png" alt="" class="img-responsive">
-					</div>
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+			<!-- Indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+				<li data-target="#myCarousel" data-slide-to="3"></li>
+				<li data-target="#myCarousel" data-slide-to="4"></li>
+				<li data-target="#myCarousel" data-slide-to="5"></li>
+			</ol>
+		
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner">
+				<div class="item active">
+					<img src="./img/fotos bembe 2/DSC_0018.jpg" alt="">
 				</div>
-				<div class="col-md-2">
+				<div class="item">
+					<img src="./img/fotos bembe 2/DSC_0026.jpg" alt="">
+				</div>
+				<div class="item">
+					<img src="./img/fotos bembe 2/DSC_0027.jpg" alt="">
+				</div>
+				<div class="item">
+					<img src="./img/fotos bembe 2/DSC_0028.jpg" alt="">
+				</div>
+				<div class="item">
+					<img src="./img/fotos bembe 2/DSC_0047.jpg" alt="">
+				</div>
+				<div class="item">
+					<img src="./img/fotos bembe 2/DSC_0052.jpg" alt="">
 				</div>
 			</div>
+		
+			<!-- Left and right controls -->
+			<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="right carousel-control" href="#myCarousel" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right"></span>
+				<span class="sr-only">Next</span>
+			</a>
 		</div>
 	</section>
 	<style>
-		.section-1 {
-			padding: 1em;
-			height: 80em;
-			display: flex;
-			align-items: center;
-			background: #fff;
-			text-align: center;
-			position: relative;
+		.section-1 .carousel {
+			height: 50vw;
 			overflow: hidden;
 		}
-
-		.section-1 .bg-image {
-			position: absolute;
-			top: 0;
-			left: 0;
-			right: 0;
-			bottom: 0;
-			filter: grayscale(0.5) opacity(0.2);
-			transform: scale(1.5);
-			width: 100%;
-			height: auto;
-		}
-
-		.section-1 .image {
-			border-radius: 50%;
-			padding: 7em;
-			background: #fff;
-			overflow: hidden;
-		}
-
-		@media (max-width: 768px) {
-			.section-1 .bg-image {
-				height: 100%;
-				width: auto;
-				max-width: initial;;
-			}
-		}
-	</style>
-
-	<section class="section-2">
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-md-6 left"><a href="./eventos.html"><span>EVENTOS</span></a></div>
-				<div class="col-md-6 right"><a href="./sets.html"><span>SETS</span></a></div>
-			</div>
-		</div>
-		<img src="" alt="" class="img-responsive">
-	</section>
-	<style>
-		.section-2 .left,
-		.section-2 .right {
-			background: url('./img/fotos bembe 2/DSC_0335.jpg') no-repeat;
-			background-size: auto 103vh;
-			background-position: 41%;
-			min-height: 15em;
-			font-size: 4em;
-			padding: 2em;
-			color: #fff;
-			/* font-weight: bold; */
-			letter-spacing: .05em;
-			position: relative;
-			filter: hue-rotate(-115.4deg);
-			transition: all .5s;
-			/* font-family: 'Major Mono Display', monospace; */
-			font-family: 'Monoton', cursive;
-		}
-
-		.section-2 .left:hover,
-		.section-2 .right:hover {
-			filter: hue-rotate(0deg);
-		}
-
-		.section-2 .left a,
-		.section-2 .right a {
-			position: absolute;
-			top: 0;
-			bottom: 0;
-			left: 0;
-			right: 0;
-			color: #fff;
-			display: flex;
+		.section-1 .carousel .item {
+			/* display: flex;
 			align-items: center;
-			justify-content: center;
+			justify-content: center; */
 		}
-
-		.section-2 .left span,
-		.section-2 .right span {}
-
-		.section-2 .right {
-			background: url('./img/fotos bembe 2/DSC_0341.jpg') no-repeat;
-			background-size: auto 103vh;
+		.section-1 .carousel img {
+			min-height: 100%;
+			min-width: 100%;
 		}
 	</style>
 
