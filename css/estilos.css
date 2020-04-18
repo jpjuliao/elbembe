@@ -14,6 +14,19 @@ a:hover {
 	padding: 20px 0;
 }
 
+/* -- FOOTER -- */
+
+footer {
+	padding: 3em;
+	background: #000;
+	text-align: center;
+}
+
+footer a {
+	color: rgb(107, 107, 107);
+	font-size: 2em;
+}
+
 /* -- POST -- */
 .main {
 	margin-top: 20px;
