@@ -11,7 +11,7 @@
 	<style>
 		body {
 			min-height: 100vh;
-    background: #000;
+			background: #000;
 		}
 	</style>
 </head>
@@ -60,14 +60,16 @@
 		</nav>
 	</header>
 
-	<!-- <section class="section-1">
+	<section class="section-1">
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-md-4"></div>
-				<div class="col-md-4">
-					<img src="./img/gorila2.png" alt="" class="img-responsive">
+				<div class="col-md-3"></div>
+				<div class="col-md-6">
+					<div class="image">
+						<img src="./img/gorila2.png" alt="" class="img-responsive">
+					</div>
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-3">
 				</div>
 			</div>
 		</div>
@@ -76,27 +78,34 @@
 		.section-1 {
 			padding: 1em;
 			height: 100vh;
-    display: flex;
-    align-items: center;
+			display: flex;
+			align-items: center;
+			background: #fff;
+			text-align: center;
+			/* background: url('./img/livephoto.jpg') no-repeat;
+			background-size: cover; */
 		}
-	</style> -->
+
+		.section-1 .image {
+			border-radius: 50%;
+			padding: 1em;
+		}
+	</style>
 
 	<!-- <img src="./img/fotos bembe 2/DSC_0341.jpg" alt=""> -->
 
 	<section class="section-2">
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-md-4"><a href="./eventos.html"><span>EVENTOS</span></a></div>
-				<div class="col-md-4">
-					<img src="./img/gorila2.png" alt="" class="img-responsive">
-				</div>
-				<div class="col-md-4"><a href="./sets.html"><span>SETS</span></a></div>
+				<div class="col-md-6 left"><a href="./eventos.html"><span>EVENTOS</span></a></div>
+				<div class="col-md-6 right"><a href="./sets.html"><span>SETS</span></a></div>
 			</div>
 		</div>
 		<img src="" alt="" class="img-responsive">
 	</section>
 	<style>
-		.section-2 .col-md-4 {
+		.section-2 .left,
+		.section-2 .right {
 			background: url('./img/fotos bembe 2/DSC_0335.jpg') no-repeat;
 			background-size: auto 103vh;
 			background-position: 41%;
@@ -111,30 +120,29 @@
 			transition: all .5s;
 		}
 
-		.section-2 .col-md-4:hover {
+		.section-2 .left:hover,
+		.section-2 .right:hover {
 			filter: hue-rotate(0deg);
 		}
 
-		.section-2 .col-md-4 a {
+		.section-2 .left a,
+		.section-2 .right a {
 			position: absolute;
-			top: 0; bottom: 0; left: 0; right: 0;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
 			color: #fff;
 		}
-		
-		.section-2 .col-md-4 span {
+
+		.section-2 .left span,
+		.section-2 .right span {
 			position: absolute;
 			left: 1em;
 			bottom: 1em;
 		}
 
-		.section-2 .col-md-4:nth-child(2) {
-			background: none;
-			filter: hue-rotate(0deg);
-			padding: 1em;
-			display: flex;
-			align-items: center;
-		}
-		.section-2 .col-md-4:nth-child(3) {
+		.section-2 .right {
 			background: url('./img/fotos bembe 2/DSC_0341.jpg') no-repeat;
 			background-size: auto 103vh;
 		}
@@ -159,6 +167,7 @@
 			background: #000;
 			text-align: center;
 		}
+
 		footer a {
 			color: rgb(107, 107, 107);
 			font-size: 2em;
