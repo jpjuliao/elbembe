@@ -31,26 +31,26 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a href="#" class="navbar-brand">
+					<a href="./index.html" class="navbar-brand">
 						<img src="./img/gorila3.png" alt="">
 						El Bembé</a>
 				</div>
 				<!-- Inicia Menu -->
 				<div class="collapse navbar-collapse" id="navegacion-fm">
 					<ul class="nav navbar-nav">
-						<li class="active"><a href="#">Inicio</a></li>
+						<li class="active"><a href="./index.html">Inicio</a></li>
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
 								Music <span class="caret"></span>
 							</a>
 							<ul class="dropdown-menu" role="menu">
-								<li><a href="#">Eventos</a></li>
+								<li><a href="./eventos.html">Eventos</a></li>
 								<li class="divider"></li>
-								<li><a href="#">Sets</a></li>
+								<li><a href="./sets.html">Sets</a></li>
 							</ul>
 						</li>
-						<li><a href="#">Blog</a></li>
-						<li><a href="#">Contacto</a></li>
+						<li><a href="./blog.html">Blog</a></li>
+						<li><a href="./contacto.html">Contacto</a></li>
 					</ul>
 
 					<form action="" class="navbar-form navbar-right" role="search">
@@ -69,6 +69,7 @@
 		header .navbar-brand {
 			padding-left: 3.5em;
 		}
+
 		header img {
 			max-height: 2.9em;
 			position: absolute;
@@ -90,12 +91,17 @@
 				<div class="col-md-2">
 				</div>
 			</div>
+			<div class="row text">
+				<div class="col-md-12">
+					<p>Música para bailar y volar</p>
+				</div>
+			</div>
 		</div>
 	</section>
 	<style>
 		.section-1 {
 			padding: 1em;
-			height: 80em;
+			/* height: 70em; */
 			display: flex;
 			align-items: center;
 			background: #fff;
@@ -118,16 +124,46 @@
 
 		.section-1 .image {
 			border-radius: 50%;
-			padding: 7em;
+			padding: 12em;
 			background: #fff;
 			overflow: hidden;
+		}
+
+		.section-1 .text {
+			background: red;
+			padding: 1em;
+			font-size: 4em;
+			color: #000;
+			text-align: center;
+			margin: 0 -30px -30px;
+			position: relative;
+			background: #dd3f35 url(file:///home/jpjuliao/Documents/moisesjuliao/img/gorila3.png) center 53%;
+			background-size: 150%;
+			position: relative;
+		}
+
+		.section-1 .text p {
+			position: relative;
+		}
+
+		.section-1 .text::before {
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			background: #dd3f35;
+			opacity: .8;
+			display: block;
 		}
 
 		@media (max-width: 768px) {
 			.section-1 .bg-image {
 				height: 100%;
 				width: auto;
-				max-width: initial;;
+				max-width: initial;
+				;
 			}
 		}
 	</style>
@@ -147,14 +183,14 @@
 			background: url('./img/fotos bembe 2/DSC_0335.jpg') no-repeat;
 			background-size: auto 103vh;
 			background-position: 41%;
-			min-height: 15em;
+			min-height: 7em;
 			font-size: 4em;
 			padding: 2em;
 			color: #fff;
 			/* font-weight: bold; */
 			letter-spacing: .05em;
 			position: relative;
-			filter: hue-rotate(-115.4deg);
+			/* filter: hue-rotate(-115.4deg); */
 			transition: all .5s;
 			/* font-family: 'Major Mono Display', monospace; */
 			font-family: 'Monoton', cursive;
@@ -172,14 +208,45 @@
 			bottom: 0;
 			left: 0;
 			right: 0;
-			color: #fff;
+			color: #dd3f35;
 			display: flex;
 			align-items: center;
 			justify-content: center;
+			transition: all .5s;
+			overflow: hidden;
+		}
+
+		.section-2 .left a:hover,
+		.section-2 .right a:hover {
+			color: #fff;
+			font-size: 1.5em;
+		}
+
+		.section-2 .left a::before,
+		.section-2 .right a::before {
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			background: #dd3f35;
+			opacity: 0;
+			display: block;
+			transition: all .5s;
+			transform: skewY(90deg);
+		}
+
+		.section-2 .left a:hover::before,
+		.section-2 .right a:hover::before {
+			opacity: 0.5;
+			transform: skewY(0deg);
 		}
 
 		.section-2 .left span,
-		.section-2 .right span {}
+		.section-2 .right span {
+			position: relative;
+		}
 
 		.section-2 .right {
 			background: url('./img/fotos bembe 2/DSC_0341.jpg') no-repeat;
